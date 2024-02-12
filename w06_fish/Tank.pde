@@ -34,13 +34,25 @@ class Tank {
   }
  
   void addAnimal(int mx, int my) {
-    int type = int(random(3));
+    int type = int(random(4));
     if (type == STARFISH) {
       animals.add(new Starfish(mx, my, 50, 50));
     } else if (type == FISH) {
       animals.add(new Fish(mx, my, 50, 50));
+    } else if (type == CRAB) {
+      animals.add(new Crab(mx, my, 45, 30));
     } else {
-      animals.add(new Animal(mx, my, 40, 20));
+      animals.add(new Animal(mx, my, 60, 60));
+    }
+  }
+ 
+  void addAnimal(int mx, int my, int type) {
+    if (type == STARFISH) {
+      animals.add(new Starfish(mx, my, 50, 50));
+    } else if (type == FISH) {
+      animals.add(new Fish(mx, my, 50, 50));
+    } else if (type == CRAB) {
+      animals.add(new Crab(mx, my, 45, 30));
     }
   }
 }

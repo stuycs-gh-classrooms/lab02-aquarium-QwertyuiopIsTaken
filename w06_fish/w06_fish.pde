@@ -7,6 +7,7 @@ int tankH;
 
 int STARFISH = 0;
 int FISH = 1;
+int CRAB = 2;
 
 void setup() {
   size(600, 600);
@@ -24,4 +25,14 @@ void draw() {
 
 void mouseClicked() {
   t.addAnimal(mouseX, mouseY);
+}
+
+void keyPressed() {
+  if (key == '1') {
+    t.addAnimal(mouseX, mouseY, 0);
+  } else if (key == '2') {
+    t.addAnimal(mouseX, mouseY, 1);
+  } else if (key == '3') {
+    t.addAnimal(mouseX, mouseY, 2);
+  }
 }

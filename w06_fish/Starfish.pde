@@ -3,7 +3,7 @@ class Starfish extends Animal {
     super(x, y, sx, sy);
     img = loadImage("Starfish.png");
   }
-  
+ 
   void collision() {
     v.y = 0;
     if (pos.x >= width - sizeX || pos.x <= 0) {
