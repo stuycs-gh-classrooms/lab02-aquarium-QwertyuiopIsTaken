@@ -5,11 +5,11 @@ class Animal {
   int sizeY;
   PImage img;
  
-  Animal(int x, int y, int vx, int vy, int sx, int sy) {
+  Animal(int x, int y, int sx, int sy) {
     pos = new PVector(x, y);
     sizeX = sx;
     sizeY = sy;
-    v = new PVector(vx, vy);
+    v = PVector.random2D();
     // Prevents the animal from getting stuck
     if (pos.x >= width - sx) {
       pos.x = width - sx  - 1;

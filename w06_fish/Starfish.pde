@@ -1,6 +1,6 @@
 class Starfish extends Animal {
-  Starfish(int x, int y, int vx, int vy, int sx, int sy) {
-    super(x, y, vx, vy, sx, sy);
+  Starfish(int x, int y, int sx, int sy) {
+    super(x, y, sx, sy);
     img = loadImage("Starfish.png");
   }
   
